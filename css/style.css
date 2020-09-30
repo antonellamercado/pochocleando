@@ -1,3 +1,26 @@
+/* MODAL CREATE NEW MOVIE*/
+
+.colorButton {
+    background-color: #cad166;
+    color: black;
+    text-decoration: solid;
+}
+
+.colorButton:hover {
+    background-color: #cad166;
+    color: black;
+}
+
+.campos {
+    width: 100%;
+}
+
+.styleForm {
+    background-color: black;
+    color: white;
+}
+
+
 /*PAGE ERROR STYLE*/
 
 @keyframes noise {
@@ -27,7 +50,8 @@
 }
 
 .glitch-text,
-button {
+button,
+.buttonError {
     font-family: monospace;
     font-weight: bold;
 }
@@ -63,7 +87,7 @@ button {
     color: white;
 }
 
-button {
+.buttonError {
     display: block;
     opacity: .6;
     box-shadow: 0px 0px 3px 6px white, 0px 0px 3px white;
@@ -79,9 +103,9 @@ button {
     transition: 200ms;
 }
 
-button:hover,
-button:focus,
-button:active {
+.buttonError:hover,
+.buttonError:focus,
+.buttonError:active {
     box-shadow: 0px 0px 3px 6px black;
     text-shadow: 0px 0px 3px white;
     background: black;
@@ -138,11 +162,11 @@ button:active {
     }
     64% {
         transform: translate(1px, 3px);
-        skew(-230deg);
+        skew: -230deg;
     }
     65% {
         transform: translate(-7px, 2px);
-        skew(120deg);
+        skew: 120deg;
     }
     66% {
         transform: translate(0px, 0px) skew(0deg);

@@ -1,168 +1,454 @@
 {
-    "peliculas": [{
-            "id": 1,
-            "nombre": "El sexto sentido",
-            "descripcion": "El doctor Malcom Crowe es un conocido psicólogo infantil de Philadelphia que vive obsesionado por el doloroso recuerdo de un joven paciente desequilibrado al que fue incapaz de ayudar. Cuando conoce a Cole Sear, un aterrorizado y confuso niño de ocho años que necesita tratamiento, ve que se le presenta la oportunidad de redimirse haciendo todo lo posible por ayudarlo. Sin embargo, el doctor Crowe no está preparado para conocer la terrible verdad acerca del don sobrenatural de su paciente: recibe visitas no deseadas de espíritus atormentados",
-            "director": "M. Night Shyamalan",
-            "genero": "Drama",
-            "categoria": "+13",
-            "publicada": "true",
-            "año": 1999,
-            "imagen": "../img/sextoSentido.png"
-        },
-        {
-            "id": 2,
-            "nombre": "Pulp Fiction",
-            "descripcion": "Jules y Vincent, dos asesinos a sueldo con no demasiadas luces, trabajan para el gángster Marsellus Wallace. Vincent le confiesa a Jules que Marsellus le ha pedido que cuide de Mia, su atractiva mujer. Jules le recomienda prudencia porque es muy peligroso sobrepasarse con la novia del jefe. Cuando llega la hora de trabajar, ambos deben ponerse manos a la obra . Su misión: recuperar un misterioso maletín",
-            "director": "Tarantino",
-            "genero": "Acción",
-            "categoria": "+18",
-            "publicada": "true",
-            "año": 1994,
-            "imagen": "https://pics.filmaffinity.com/Tiempos_violentos-737413971-large.jpg"
-        },
-        {
-            "id": 3,
-            "nombre": "Todo Sobre Mi Madre",
-            "descripcion": "Madrid. Manuela, una madre soltera, ve morir a su hijo el día en que cumple 17 años, por echarse a correr para conseguir el autógrafo de Huma Rojo, su actriz favorita. Destrozada, Manuela viaja entonces a Barcelona en busca del padre del chico",
-            "director": "Almodobar",
-            "genero": "Drama",
-            "categoria": "+18",
-            "publicada": "true",
-            "año": 1999,
-            "imagen": "https://4.bp.blogspot.com/-mCKscHMfpMA/WLvxw5G1h7I/AAAAAAAAEdU/5Qx-WKcMUkoEThjOn1tM2estemr0TonYwCLcB/s1600/Titulos%2Bde%2BCredito%2BTodo%2Bsobre%2Bmi%2Bmadre.jpg"
-        },
-        {
-            "id": 4,
-            "nombre": "Pacto de fuga",
-            "descripcion": "La noche del 29 de enero de 1990, poco antes de iniciarse la reconstrucción democrática en Chile, medio centenar de presos políticos se fugaron de la cárcel pública de Santiago por un túnel que 24 militantes del Frente Patriótico Manuel Rodríguez (FPMR) habían excavado durante 18 meses, 80 metros de longitud con herramientas tan rudimentarias como cucharas, tenedores y un solo destornillador; escondiendo 55 toneladas de tierra dentro del centro penitenciario",
-            "director": "David Albala",
-            "genero": "Accion",
-            "categoria": "+18",
-            "publicada": "true",
-            "año": 2020,
-            "imagen": "https://paropua1973.files.wordpress.com/2020/02/pf5.jpg"
-        },
-        {
-            "id": 5,
-            "nombre": "Compulsión",
-            "descripcion": "La tímida Esther (Marina Esteve) y el carismático Robert (Paco Manzanedo) forman una feliz y envidiable pareja. Pero todo se desvanece cuando ella encuentra indicios de que él la está engañando con otra. Decidida a confirmar sus sospechas, le sigue clandestinamente y ve cómo se cita con otra chica. Lo que Esther jamás pudo imaginar es la terrible pesadilla en que se convertirá su vida al revelar el siniestro secreto que el verdadero Robert oculta. Thriller de terror y suspense que dirige el debutante Ángel González (¿De qué va la vida?) y que protagonizan Marina Esteve (Mar de plástico), Susana Abaitua (Viaje al cuarto de una madre) y Paco Manzanedo (El embarcadero).",
-            "director": "Ángel González",
-            "genero": "Terror",
-            "categoria": "+13",
-            "publicada": "true",
-            "año": 2019,
-            "imagen": "https://cinemagavia.es/wp-content/uploads/2019/04/Compulsio%CC%81n-1.jpg"
-        },
-        {
-            "id": 6,
-            "nombre": "The Music Box",
-            "descripcion": "Sophie es una huérfana de 6 años cuya tutela es asignada a su tía Annabelle a pesar de que no tiene experiencia cuidando niños. Vivirán en una casa victoriana grande y misteriosa con un jardín impresionante. Un día, Sophie encuentra una caja de madera cerrada con un misterioso símbolo tallado en la parte superior. En un intento por encontrar una manera de conectar emocionalmente con su sobrina, Annabelle utiliza unas herramientas para abrir la cerradura de la caja, revelando una hermosa caja de música. Annabelle y Sophie pronto descubren que la caja de música está poseída por un espíritu maligno que pronto tratará de destruirlas.",
-            "director": "Almodobar",
-            "genero": "Terror",
-            "categoria": "+13",
-            "publicada": "true",
-            "año": 2018,
-            "imagen": "https://i0.wp.com/teaser-trailer.com/wp-content/uploads/The-Music-Box.jpg?resize=600%2C385&ssl=1"
-        },
-        {
-            "id": 7,
-            "nombre": "The Unfamiliar",
-            "descripcion": "Un médico del ejército británico regresa de una guerra, pensando que tiene PTSD solo para descubrir que hay una malevolencia más desalentadora en el trabajo que hace que la vida que conocía le resulte desconocida",
-            "director": "Henk Pretorius",
-            "genero": "Terror",
-            "categoria": "+18",
-            "publicada": "true",
-            "año": 2020,
-            "imagen": "https://theunfamiliarmovie.com/wp-content/uploads/2020/06/FilmHeroBanner.jpg"
-        },
-        {
-            "id": 8,
-            "nombre": "La llorona",
-            "descripcion": "Una historia de horror y fantasía, llena de suspenso, y una metáfora urgente de la historia reciente de Guatemala y sus heridas políticas curadas.",
-            "director": "Jairo bustamante",
-            "genero": "Terror",
-            "categoria": "+13",
-            "publicada": "true",
-            "año": 2020,
-            "imagen": "https://pm1.narvii.com/7258/f201ea32d68925eec94a5c882b6ae6d9344bbdf3r1-640-592v2_uhq.jpg"
-        },
-        {
-            "id": 9,
-            "nombre": "Ted 2",
-            "descripcion": "Se trata de una secuela de la exitosa comedia escrita y dirigida por el cómico Seth MacFarlane. Recién casados Ted y Tami-Lynn deciden tener un bebé. John se ofrece en donar su esperma para que su mejor amigo pueda cumplir su sueño de tener un hijo, pero inesperadamente reciben una carta legal que dice que el estado no le permite ser padre ya que no está demostrado que sea una persona. Todos juntos tendrán que unir fuerzas para luchar por sus derechos en un tribunal de justicia.",
-            "director": "Kelly Cronin, Seth MacFarlane",
-            "genero": "Comedia",
-            "categoria": "ATP",
-            "publicada": "true",
-            "año": 2015,
-            "imagen": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/ted-2-2015-1597450017.jpg?crop=0.865xw:1.00xh;0.0692xw,0&resize=768:*"
-        },
-        {
-            "id": 10,
-            "nombre": "La boda de rosa",
-            "descripcion": "Rosa tiene un trabajo extenuante, un hermano mandón, un padre pegado como un mejillón, una hermana que no echa una mano, una hija que tras haberse emancipado vuelve a casa con dos bebés y un novio al que no consigue ver el pelo. Demasiado acostumbrada a poner a todo el mundo primero que a sí misma, Rosa se encuentra, a punto de cumplir cuarenta y cinco, no solo con que no tiene control sobre su vida, sino que por el camino que va, no lo va a tener nunca. Rosa decide dar un giro y tomar las riendas de su vida, o al menos intentarlo. Quiere cumplir el sueño de tener un negocio propio, pero antes, quiere casarse y embarcarse en un matrimonio muy especial.",
-            "director": "Icíar Bollaín",
-            "genero": "Comedia",
-            "categoria": "ATP",
-            "publicada": "true",
-            "año": 2020,
-            "imagen": "https://www.prensa-latina.cu/images/2020/agosto/21/0-BodaRosa.jpg"
-        },
-        {
-            "id": 11,
-            "nombre": "Pets united",
-            "descripcion": "Un astuto perro y una gatita consentida lideran a un equipo de héroes inesperados después de que su ciudad se vea asediada por el malvado alcalde y su ejército de robots.",
-            "director": "Reinhard Klooss",
-            "genero": "Comedia",
-            "categoria": "ATP",
-            "publicada": "true",
-            "año": 2019,
-            "imagen": "https://cdn.cinenaxos.gr/cinema/media/pets-united-poster.jpg"
-        },
-        {
-            "id": 12,
-            "nombre": "Se busca papá",
-            "descripcion": "Su mamá le prohibió inscribirse en una carrera de BMX, y esta pequeña cazadora de adrenalina no tiene mejor idea que contratar a un actor para el rol de su papá.",
-            "director": "Javier Colinas",
-            "genero": "Comedia",
-            "categoria": "ATP",
-            "publicada": "true",
-            "año": 2020,
-            "imagen": "https://media.metrolatam.com/2020/09/15/sebuscapapa-b08d7ebb68d3a5f8cd3cf666d778e2ff-1200x800.jpg"
-        },
-        {
-            "id": 13,
-            "nombre": "Los elegidos",
-            "descripcion": "Los Barret son una familia que vive en los suburbios. Lacey y Daniel (Keri Russell & Josh Hamilton) presencian una serie de extraños acontecimientos perturbadores que afectan a su familia, a su seguridad y a su tranquilidad. Cuando descubren que su familia es el objetivo de una inimaginable y terrorífica fuerza mortal, ambos tendrán que hacer todo lo que esté en sus manos para resolver este oscuro misterio.",
-            "director": "Jean-Paul Chreky, Renetta G. Amador, Scott Stewart",
-            "genero": "Ciencia Ficcion",
-            "categoria": "ATP",
-            "publicada": "true",
-            "año": 2013,
-            "imagen": "https://i.pinimg.com/564x/33/7b/5a/337b5a044a54a7cc14d7162313d34cb0.jpg"
-        },
-        {
-            "id": 14,
-            "nombre": "Matrix Revolutions",
-            "descripcion": "La tercera parte de “Matrix” forma junto a “Matrix Reloaded” una película dividida en dos debido a su larga duración. Matrix Revolutions tiene lugar en su mayor parte en en el mundo real, en el que Neo, Trinity y Morpheo lucharán contra el avance de las máquinas hacia la ciudad de Zion, último reducto de la raza humana.",
-            "director": "James McTeigue, Lana Wachowski, Lilly Wachowski",
-            "genero": "Ciencia Ficcion",
-            "categoria": "ATP",
-            "publicada": "true",
-            "año": 2003,
-            "imagen": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/matrix-4-1566468344.jpg?crop=0.8577777777777778xw:1xh;center,top&resize=980:*"
-        },
-        {
-            "id": 15,
-            "nombre": "A.I. Rising",
-            "descripcion": "Año 2048, Milutin ha emprendido un viaje a Alfa Centauri con la ayuda de Nimani, una androide con forma de mujer que, entre otras cosas, proporcionará compañía a Milutin, que la somete a una tórrida relación sexual. Harto de las funciones preestablecidas de la androide, el astronauta decide configurarla a partir de las experiencias que esta ha vivido… el resultado, sin embargo, no será el que él espera.",
-            "director": "Lazar Bodroža",
-            "genero": "Ciencia Ficcion",
-            "categoria": "ATP",
-            "publicada": "true",
-            "año": 2018,
-            "imagen": "https://3.bp.blogspot.com/-8VbOHT4JHeE/XLUQmNUHgRI/AAAAAAAAYkM/2XKbNXN0b587W2EqJKjKZ3Tid2tiw2euQCLcBGAs/s1600/airising.jpg"
-        }
-    ]
+  "peliculas": [
+    {
+      "id": 1,
+      "nombre": "El sexto sentido",
+      "descripcion": "El doctor Malcom Crowe es un conocido psicólogo infantil de Philadelphia que vive obsesionado por el doloroso recuerdo de un joven paciente desequilibrado al que fue incapaz de ayudar. Cuando conoce a Cole Sear, un aterrorizado y confuso niño de ocho años que necesita tratamiento, ve que se le presenta la oportunidad de redimirse haciendo todo lo posible por ayudarlo. Sin embargo, el doctor Crowe no está preparado para conocer la terrible verdad acerca del don sobrenatural de su paciente: recibe visitas no deseadas de espíritus atormentados",
+      "director": "M. Night Shyamalan",
+      "genero": "Drama",
+      "categoria": "+13",
+      "publicada": "true",
+      "año": 1999,
+      "imagen": "../img/sextoSentido.png"
+    },
+    {
+      "id": 2,
+      "nombre": "Pulp Fiction",
+      "descripcion": "Jules y Vincent, dos asesinos a sueldo con no demasiadas luces, trabajan para el gángster Marsellus Wallace. Vincent le confiesa a Jules que Marsellus le ha pedido que cuide de Mia, su atractiva mujer. Jules le recomienda prudencia porque es muy peligroso sobrepasarse con la novia del jefe. Cuando llega la hora de trabajar, ambos deben ponerse manos a la obra . Su misión: recuperar un misterioso maletín",
+      "director": "Tarantino",
+      "genero": "Acción",
+      "categoria": "+18",
+      "publicada": "true",
+      "año": 1994,
+      "imagen": "https://pics.filmaffinity.com/Tiempos_violentos-737413971-large.jpg"
+    },
+    {
+      "id": 3,
+      "nombre": "Todo Sobre Mi Madre",
+      "descripcion": "Madrid. Manuela, una madre soltera, ve morir a su hijo el día en que cumple 17 años, por echarse a correr para conseguir el autógrafo de Huma Rojo, su actriz favorita. Destrozada, Manuela viaja entonces a Barcelona en busca del padre del chico",
+      "director": "Almodobar",
+      "genero": "Drama",
+      "categoria": "+18",
+      "publicada": "true",
+      "año": 1999,
+      "imagen": "https://4.bp.blogspot.com/-mCKscHMfpMA/WLvxw5G1h7I/AAAAAAAAEdU/5Qx-WKcMUkoEThjOn1tM2estemr0TonYwCLcB/s1600/Titulos%2Bde%2BCredito%2BTodo%2Bsobre%2Bmi%2Bmadre.jpg"
+    },
+    {
+      "id": 4,
+      "nombre": "Pacto de fuga",
+      "descripcion": "La noche del 29 de enero de 1990, poco antes de iniciarse la reconstrucción democrática en Chile, medio centenar de presos políticos se fugaron de la cárcel pública de Santiago por un túnel que 24 militantes del Frente Patriótico Manuel Rodríguez (FPMR) habían excavado durante 18 meses, 80 metros de longitud con herramientas tan rudimentarias como cucharas, tenedores y un solo destornillador; escondiendo 55 toneladas de tierra dentro del centro penitenciario",
+      "director": "David Albala",
+      "genero": "Accion",
+      "categoria": "+18",
+      "publicada": "true",
+      "año": 2020,
+      "imagen": "https://paropua1973.files.wordpress.com/2020/02/pf5.jpg"
+    },
+    {
+      "id": 5,
+      "nombre": "Compulsión",
+      "descripcion": "La tímida Esther (Marina Esteve) y el carismático Robert (Paco Manzanedo) forman una feliz y envidiable pareja. Pero todo se desvanece cuando ella encuentra indicios de que él la está engañando con otra. Decidida a confirmar sus sospechas, le sigue clandestinamente y ve cómo se cita con otra chica. Lo que Esther jamás pudo imaginar es la terrible pesadilla en que se convertirá su vida al revelar el siniestro secreto que el verdadero Robert oculta. Thriller de terror y suspense que dirige el debutante Ángel González (¿De qué va la vida?) y que protagonizan Marina Esteve (Mar de plástico), Susana Abaitua (Viaje al cuarto de una madre) y Paco Manzanedo (El embarcadero).",
+      "director": "Ángel González",
+      "genero": "Terror",
+      "categoria": "+13",
+      "publicada": "true",
+      "año": 2019,
+      "imagen": "https://cinemagavia.es/wp-content/uploads/2019/04/Compulsio%CC%81n-1.jpg"
+    },
+    {
+      "id": 6,
+      "nombre": "The Music Box",
+      "descripcion": "Sophie es una huérfana de 6 años cuya tutela es asignada a su tía Annabelle a pesar de que no tiene experiencia cuidando niños. Vivirán en una casa victoriana grande y misteriosa con un jardín impresionante. Un día, Sophie encuentra una caja de madera cerrada con un misterioso símbolo tallado en la parte superior. En un intento por encontrar una manera de conectar emocionalmente con su sobrina, Annabelle utiliza unas herramientas para abrir la cerradura de la caja, revelando una hermosa caja de música. Annabelle y Sophie pronto descubren que la caja de música está poseída por un espíritu maligno que pronto tratará de destruirlas.",
+      "director": "Almodobar",
+      "genero": "Terror",
+      "categoria": "+13",
+      "publicada": "true",
+      "año": 2018,
+      "imagen": "https://i0.wp.com/teaser-trailer.com/wp-content/uploads/The-Music-Box.jpg?resize=600%2C385&ssl=1"
+    },
+    {
+      "id": 7,
+      "nombre": "The Unfamiliar",
+      "descripcion": "Un médico del ejército británico regresa de una guerra, pensando que tiene PTSD solo para descubrir que hay una malevolencia más desalentadora en el trabajo que hace que la vida que conocía le resulte desconocida",
+      "director": "Henk Pretorius",
+      "genero": "Terror",
+      "categoria": "+18",
+      "publicada": "true",
+      "año": 2020,
+      "imagen": "https://theunfamiliarmovie.com/wp-content/uploads/2020/06/FilmHeroBanner.jpg"
+    },
+    {
+      "id": 8,
+      "nombre": "La llorona",
+      "descripcion": "Una historia de horror y fantasía, llena de suspenso, y una metáfora urgente de la historia reciente de Guatemala y sus heridas políticas curadas.",
+      "director": "Jairo bustamante",
+      "genero": "Terror",
+      "categoria": "+13",
+      "publicada": "true",
+      "año": 2020,
+      "imagen": "https://pm1.narvii.com/7258/f201ea32d68925eec94a5c882b6ae6d9344bbdf3r1-640-592v2_uhq.jpg"
+    },
+    {
+      "id": 9,
+      "nombre": "Ted 2",
+      "descripcion": "Se trata de una secuela de la exitosa comedia escrita y dirigida por el cómico Seth MacFarlane. Recién casados Ted y Tami-Lynn deciden tener un bebé. John se ofrece en donar su esperma para que su mejor amigo pueda cumplir su sueño de tener un hijo, pero inesperadamente reciben una carta legal que dice que el estado no le permite ser padre ya que no está demostrado que sea una persona. Todos juntos tendrán que unir fuerzas para luchar por sus derechos en un tribunal de justicia.",
+      "director": "Kelly Cronin, Seth MacFarlane",
+      "genero": "Comedia",
+      "categoria": "ATP",
+      "publicada": "true",
+      "año": 2015,
+      "imagen": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/ted-2-2015-1597450017.jpg?crop=0.865xw:1.00xh;0.0692xw,0&resize=768:*"
+    },
+    {
+      "id": 10,
+      "nombre": "La boda de rosa",
+      "descripcion": "Rosa tiene un trabajo extenuante, un hermano mandón, un padre pegado como un mejillón, una hermana que no echa una mano, una hija que tras haberse emancipado vuelve a casa con dos bebés y un novio al que no consigue ver el pelo. Demasiado acostumbrada a poner a todo el mundo primero que a sí misma, Rosa se encuentra, a punto de cumplir cuarenta y cinco, no solo con que no tiene control sobre su vida, sino que por el camino que va, no lo va a tener nunca. Rosa decide dar un giro y tomar las riendas de su vida, o al menos intentarlo. Quiere cumplir el sueño de tener un negocio propio, pero antes, quiere casarse y embarcarse en un matrimonio muy especial.",
+      "director": "Icíar Bollaín",
+      "genero": "Comedia",
+      "categoria": "ATP",
+      "publicada": "true",
+      "año": 2020,
+      "imagen": "https://www.prensa-latina.cu/images/2020/agosto/21/0-BodaRosa.jpg"
+    },
+    {
+      "id": 11,
+      "nombre": "Pets united",
+      "descripcion": "Un astuto perro y una gatita consentida lideran a un equipo de héroes inesperados después de que su ciudad se vea asediada por el malvado alcalde y su ejército de robots.",
+      "director": "Reinhard Klooss",
+      "genero": "Comedia",
+      "categoria": "ATP",
+      "publicada": "true",
+      "año": 2019,
+      "imagen": "https://cdn.cinenaxos.gr/cinema/media/pets-united-poster.jpg"
+    },
+    {
+      "id": 12,
+      "nombre": "Se busca papá",
+      "descripcion": "Su mamá le prohibió inscribirse en una carrera de BMX, y esta pequeña cazadora de adrenalina no tiene mejor idea que contratar a un actor para el rol de su papá.",
+      "director": "Javier Colinas",
+      "genero": "Comedia",
+      "categoria": "ATP",
+      "publicada": "true",
+      "año": 2020,
+      "imagen": "https://media.metrolatam.com/2020/09/15/sebuscapapa-b08d7ebb68d3a5f8cd3cf666d778e2ff-1200x800.jpg"
+    },
+    {
+      "id": 13,
+      "nombre": "Los elegidos",
+      "descripcion": "Los Barret son una familia que vive en los suburbios. Lacey y Daniel (Keri Russell & Josh Hamilton) presencian una serie de extraños acontecimientos perturbadores que afectan a su familia, a su seguridad y a su tranquilidad. Cuando descubren que su familia es el objetivo de una inimaginable y terrorífica fuerza mortal, ambos tendrán que hacer todo lo que esté en sus manos para resolver este oscuro misterio.",
+      "director": "Jean-Paul Chreky, Renetta G. Amador, Scott Stewart",
+      "genero": "Ciencia Ficcion",
+      "categoria": "ATP",
+      "publicada": "true",
+      "año": 2013,
+      "imagen": "https://i.pinimg.com/564x/33/7b/5a/337b5a044a54a7cc14d7162313d34cb0.jpg"
+    },
+    {
+      "id": 14,
+      "nombre": "Matrix Revolutions",
+      "descripcion": "La tercera parte de “Matrix” forma junto a “Matrix Reloaded” una película dividida en dos debido a su larga duración. Matrix Revolutions tiene lugar en su mayor parte en en el mundo real, en el que Neo, Trinity y Morpheo lucharán contra el avance de las máquinas hacia la ciudad de Zion, último reducto de la raza humana.",
+      "director": "James McTeigue, Lana Wachowski, Lilly Wachowski",
+      "genero": "Ciencia Ficcion",
+      "categoria": "ATP",
+      "publicada": "true",
+      "año": 2003,
+      "imagen": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/matrix-4-1566468344.jpg?crop=0.8577777777777778xw:1xh;center,top&resize=980:*"
+    },
+    {
+      "id": 15,
+      "nombre": "A.I. Rising",
+      "descripcion": "Año 2048, Milutin ha emprendido un viaje a Alfa Centauri con la ayuda de Nimani, una androide con forma de mujer que, entre otras cosas, proporcionará compañía a Milutin, que la somete a una tórrida relación sexual. Harto de las funciones preestablecidas de la androide, el astronauta decide configurarla a partir de las experiencias que esta ha vivido… el resultado, sin embargo, no será el que él espera.",
+      "director": "Lazar Bodroža",
+      "genero": "Ciencia Ficcion",
+      "categoria": "ATP",
+      "publicada": "true",
+      "año": 2018,
+      "imagen": "https://3.bp.blogspot.com/-8VbOHT4JHeE/XLUQmNUHgRI/AAAAAAAAYkM/2XKbNXN0b587W2EqJKjKZ3Tid2tiw2euQCLcBGAs/s1600/airising.jpg"
+    },
+    {
+      "nombre": "aaa",
+      "director": "wwww",
+      "genero": "Accion",
+      "categoria": "sss",
+      "anio": "1234",
+      "publicada": "true",
+      "id": 16
+    },
+    {
+      "nombre": "nueva peli",
+      "director": "dddd",
+      "genero": "Drama",
+      "categoria": "sdf",
+      "anio": "1990",
+      "publicada": "true",
+      "id": 17
+    },
+    {
+      "nombre": "hola ",
+      "director": ",maxi",
+      "genero": "Ciencia ficcion",
+      "categoria": "atp",
+      "anio": "2010",
+      "publicada": "true",
+      "id": 18
+    },
+    {
+      "nombre": "Nueva peli prueba",
+      "director": "antonalle",
+      "genero": "Drama",
+      "categoria": "atp",
+      "anio": "2020",
+      "publicada": "true",
+      "id": 19
+    },
+    {
+      "nombre": "abril salinas",
+      "director": "la lulu",
+      "genero": "Ciencia ficcion",
+      "categoria": "+13",
+      "anio": "1990",
+      "publicada": "false",
+      "id": 20
+    },
+    {
+      "nombre": "otra prueba",
+      "descripcion": "a ver si guarda la descripcion y el publicada en false",
+      "director": "soy yo",
+      "genero": "Comedia",
+      "categoria": "+19",
+      "anio": "1090",
+      "publicada": "false",
+      "id": 21
+    },
+    {
+      "nombre": "",
+      "descripcion": "",
+      "director": "",
+      "genero": "Accion",
+      "categoria": "",
+      "anio": "",
+      "publicada": "false",
+      "id": 22
+    },
+    {
+      "nombre": "",
+      "descripcion": "",
+      "director": "",
+      "genero": "Accion",
+      "categoria": "",
+      "anio": "",
+      "publicada": "false",
+      "id": 23
+    },
+    {
+      "nombre": "",
+      "descripcion": "",
+      "director": "",
+      "genero": "Accion",
+      "categoria": "",
+      "anio": "",
+      "publicada": "false",
+      "id": 24
+    },
+    {
+      "nombre": "",
+      "descripcion": "",
+      "director": "",
+      "genero": "Accion",
+      "categoria": "",
+      "anio": "",
+      "publicada": "false",
+      "id": 25
+    },
+    {
+      "nombre": "",
+      "descripcion": "",
+      "director": "",
+      "genero": "Accion",
+      "categoria": "",
+      "anio": "",
+      "publicada": "false",
+      "id": 26
+    },
+    {
+      "nombre": "",
+      "descripcion": "",
+      "director": "",
+      "genero": "Accion",
+      "categoria": "",
+      "anio": "",
+      "publicada": "false",
+      "id": 27
+    },
+    {
+      "nombre": "",
+      "descripcion": "",
+      "director": "",
+      "genero": "Accion",
+      "categoria": "",
+      "anio": "",
+      "publicada": "false",
+      "id": 28
+    },
+    {
+      "nombre": "",
+      "descripcion": "",
+      "director": "",
+      "genero": "Accion",
+      "categoria": "",
+      "anio": "",
+      "publicada": "false",
+      "id": 29
+    },
+    {
+      "nombre": "",
+      "descripcion": "",
+      "director": "",
+      "genero": "Accion",
+      "categoria": "",
+      "anio": "",
+      "publicada": "false",
+      "id": 30
+    },
+    {
+      "nombre": "",
+      "descripcion": "",
+      "director": "",
+      "genero": "Accion",
+      "categoria": "",
+      "anio": "",
+      "publicada": "false",
+      "id": 31
+    },
+    {
+      "nombre": "",
+      "descripcion": "",
+      "director": "",
+      "genero": "Accion",
+      "categoria": "",
+      "anio": "",
+      "publicada": "false",
+      "id": 32
+    },
+    {
+      "nombre": "",
+      "descripcion": "",
+      "director": "",
+      "genero": "Accion",
+      "categoria": "",
+      "anio": "",
+      "publicada": "false",
+      "id": 33
+    },
+    {
+      "nombre": "",
+      "descripcion": "",
+      "director": "",
+      "genero": "Accion",
+      "categoria": "",
+      "anio": "",
+      "publicada": "false",
+      "id": 34
+    },
+    {
+      "nombre": "",
+      "descripcion": "",
+      "director": "",
+      "genero": "Accion",
+      "categoria": "",
+      "anio": "",
+      "publicada": "false",
+      "id": 35
+    },
+    {
+      "nombre": "",
+      "descripcion": "",
+      "director": "",
+      "genero": "Drama",
+      "categoria": "",
+      "anio": "",
+      "publicada": "false",
+      "id": 36
+    },
+    {
+      "nombre": "",
+      "descripcion": "",
+      "director": "",
+      "genero": "Accion",
+      "categoria": "",
+      "anio": "",
+      "publicada": "false",
+      "id": 37
+    },
+    {
+      "nombre": "",
+      "descripcion": "",
+      "director": "",
+      "genero": "Accion",
+      "categoria": "",
+      "anio": "",
+      "publicada": "false",
+      "id": 38
+    },
+    {
+      "nombre": "",
+      "descripcion": "",
+      "director": "",
+      "genero": "Accion",
+      "categoria": "",
+      "anio": "",
+      "publicada": "true",
+      "id": 39
+    },
+    {
+      "nombre": "",
+      "descripcion": "",
+      "director": "",
+      "genero": "Accion",
+      "categoria": "",
+      "anio": "",
+      "publicada": "false",
+      "id": 40
+    },
+    {
+      "nombre": "",
+      "descripcion": "",
+      "director": "",
+      "genero": "Accion",
+      "categoria": "",
+      "anio": "",
+      "publicada": "false",
+      "id": 41
+    },
+    {
+      "nombre": "",
+      "descripcion": "",
+      "director": "",
+      "genero": "Accion",
+      "categoria": "",
+      "anio": "",
+      "publicada": "false",
+      "id": 42
+    },
+    {
+      "nombre": "Mama",
+      "descripcion": "Esuna pelicula bla bla bla",
+      "director": "Antonella",
+      "genero": "Ciencia ficcion",
+      "categoria": "+13",
+      "anio": "2009",
+      "publicada": "true",
+      "id": 43
+    },
+    {
+      "nombre": "aaa",
+      "descripcion": "jujjsdsd",
+      "director": "sssss",
+      "genero": "Drama",
+      "categoria": "+13",
+      "anio": "1234",
+      "publicada": "true",
+      "id": 44
+    }
+  ]
 }
