@@ -16,17 +16,12 @@ function createForm() {
     const bodyForm = document.createElement('div');
     bodyForm.innerHTML = `
 <div class="modal-body">
-
 <label>Nombre:</label>
 <input type=text id=nombreInput class=campos required>
-
 <br>
-
 <label>Descripcion:</label><br>
 <textarea id=descripcionInput class=campos required></textarea>
-
 <br>
-
 <label>Genero:</label>
 <select id="generoInput" name="opciones" class=campos required>
   <option value="1">Accion</option>
@@ -34,24 +29,16 @@ function createForm() {
   <option value="3">Comedia</option>
   <option value="4">Ciencia ficcion</option>
 </select>
-
 <br>
 <br>
-
 <label class="mr-2">Director:</label>
 <input type=text id=directorInput class=campos required>
-
 <br>
-
 <label>Categoria:</label>
 <input type="text" id=categoriaInput class=campos required>
-
 <br>
-
 <label>Año:</label>
 <input type="text" id=anioInput class=campos required>
-
-
 <br>
 <div class="custom-control custom-switch form-group form-check">
   <input type="checkbox" class="custom-control-input" id="publicadaInput" required>
