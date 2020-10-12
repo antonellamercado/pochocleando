@@ -1,511 +1,511 @@
-                /*PAGE ERROR STYLE*/
-            
-            @keyframes noise {
-                0% {
-                    background-position: 1000px;
-                }
-            }
-            
-            .error-404 {
-                text-align: center;
-                overflow: hidden;
-                margin: 0px;
-                background: rgb(31, 31, 31);
-                height: 100vh;
-                box-shadow: 0px 0px 122px 25px black inset;
-                background-image: url('https://i.imgur.com/eg7VIun.jpg');
-                background-repeat: repeat;
-                animation: noise 20ms linear infinite;
-            }
-            
-            .glitch-wrapper {
-                padding-top: 180px;
-                width: 100vw;
-                text-align: center;
-                animation: glitch 2s linear infinite;
-                margin-bottom: 110px;
-            }
-            
-            .glitch-text,
-            .buttonError {
-                font-family: monospace;
-                font-weight: bold;
-            }
-            
-            .glitch-text::before {
-                content: 'ERROR 404';
-                color: black;
-                text-shadow: 0px 0px 5px 10px black!IMPORTANT;
-                -webkit-filter: blur(7px);
-                -moz-filter: blur(7px);
-                -o-filter: blur(7x);
-                -ms-filter: blur(7px);
-                filter: blur(7px);
-                display: block;
-                position: absolute;
-                z-index: -1;
-                font-size: 3em;
-                left: 0px;
-                right: 0px;
-                margin-top: -30px;
-                opacity: .5;
-            }
-            
-            .glitch-text {
-                position: relative;
-                z-index: 2;
-                opacity: .9;
-                margin: 0 auto;
-                text-shadow: 0px 0px 3px white;
-                animation: glitch 3s infinite;
-                cursor: pointer;
-                font-size: 2em;
-                color: white;
-            }
-            
-            .buttonError {
-                display: block;
-                opacity: .6;
-                box-shadow: 0px 0px 3px 6px white, 0px 0px 3px white;
-                text-shadow: 0px 0px 3px black;
-                background: white;
-                border: 0px;
-                padding: 7px;
-                margin: 0 auto;
-                outline: none;
-                cursor: pointer;
-                margin-top: 30px;
-                font-size: 16px;
-                transition: 200ms;
-            }
-            
-            .buttonError:hover,
-            .buttonError:focus,
-            .buttonError:active {
-                box-shadow: 0px 0px 3px 6px black;
-                text-shadow: 0px 0px 3px white;
-                background: black;
-                color: white;
-                transition: 200ms;
-                border-top-left-radius: 5px;
-                border-bottom-right-radius: 5px;
-            }
-            /* JUST RANDOM VALUES HERE! */
-            
-            @keyframes glitch {
-                3% {
-                    text-shadow: 7px 7px 0px red;
-                }
-                6% {
-                    text-shadow: -9px 4px 0px blue;
-                    transform: translate(4px, -10px) skewX(3240deg);
-                }
-                7% {
-                    text-shadow: 3px -4px 0px green;
-                }
-                9% {
-                    text-shadow: 0px 0px 3px white;
-                    transform: translate(0px, 0px) skewX(0deg);
-                }
-                2%,
-                54% {
-                    transform: translateX(0px) skew(0deg);
-                }
-                55% {
-                    transform: translate(-2px, 6px) skew(-5530deg);
-                }
-                56% {
-                    text-shadow: 0px 0px 3px white;
-                    transform: translate(0px, 0px) skew(0deg);
-                }
-                57% {
-                    text-shadow: 7px 7px 0px red;
-                    transform: translate(4px, -10px) skew(-70deg);
-                }
-                58% {
-                    text-shadow: 0px 0px 3px white;
-                    transform: translate(0px, 0px) skew(0deg);
-                }
-                62% {
-                    text-shadow: 3px -4px 0px green;
-                    transform: translate(0px, 20px) skew(0deg);
-                }
-                63% {
-                    text-shadow: 0px 0px 3px white;
-                    transform: translate(4px, -2px) skew(0deg);
-                }
-                64% {
-                    transform: translate(1px, 3px);
-                    skew: -230deg;
-                }
-                65% {
-                    transform: translate(-7px, 2px);
-                    skew: 120deg;
-                }
-                66% {
-                    transform: translate(0px, 0px) skew(0deg);
-                }
-            }
-            /*<------------------------INICIO CARRUSSEL-DIEGO --------------------->*/
-            
-            .movie-card {
-                transition: transform 0.5 ease;
-            }
-            
-            .movie-card:hover {
-                transform: scale(1.3);
-            }
-            
-            .resume {
-                background-color: rgba(0, 0, 0, 0.6);
-                width: 13rem;
-                height: 15rem;
-                opacity: 0;
-                transition: opacity 0.5s ease;
-                cursor: default;
-                font-size: 0.7rem;
-            }
-            
-            .resume:hover {
-                opacity: 1;
-            }
-            
-            .movie-title {
-                cursor: default;
-            }
-            
-            .movie {
-                width: 13rem;
-                height: 15rem;
-                margin: 10px;
-                background-size: 100% 100%;
-                box-shadow: -10px 10px rgba(0, 0, 0, 0.1), 0 15px 30px rgba(0, 0, 0, .65);
-            }
-            
-            .carrousel {
-                margin-left: 15px;
-                width: 90%;
-                height: auto;
-            }
-            
-            .movie-resume {
-                height: 8rem;
-                overflow: scroll;
-            }
-            
-            .movie-resume::-webkit-scrollbar {
-                width: 5px;
-                color: #a9bdc5;
-            }
-            
-            .movie-resume::-webkit-scrollbar-thumb {
-                background: #c02020;
-                border-radius: 10px;
-                border-right: 2px;
-            }
-            
-            .carrousel {
-                overflow: hidden;
-            }
-            
-            .carrousel-Comedia,
-            .carrousel-Terror,
-            .carrousel-Drama,
-            .carrousel-Acción,
-            .carrousel-Ficción {
-                overflow-x: scroll;
-                scroll-behavior: smooth;
-            }
-            
-            .carrousel-Comedia::-webkit-scrollbar,
-            .carrousel-Terror::-webkit-scrollbar,
-            .carrousel-Drama::-webkit-scrollbar,
-            .carrousel-Acción::-webkit-scrollbar,
-            .carrousel-Ficción::-webkit-scrollbar {
-                display: none;
-            }
-            /*<------------------------FIN CARRUSSEL-DIEGO --------------------->*/
-            /* Header y Navbar*/
-            
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-            
-            .logoContainer {
-                background-color: #010f2b;
-                height: 15px;
-                ;
-            }
-            
-            .hamb {
-                height: 10vh;
-                background: #010f2b;
-            }
-            
-            .nav-links {
-                display: flex;
-                list-style: none;
-                width: 50%;
-                height: 100%;
-                justify-content: space-around;
-                align-items: center;
-                margin-left: auto;
-            }
-            
-            .nav-links {
-                color: #f0f2f5;
-                text-decoration: none;
-                font-size: 16px;
-            }
-            
-            .link {
-                color: #f0f2f5;
-                text-decoration: none;
-                font-size: 16px;
-            }
-            
-            .item {
-                color: #f0f2f5;
-                text-decoration: none;
-                font-size: 16px;
-            }
-            
-            .logoHeader {
-                display: block;
-                margin-left: 20px;
-                padding-top: 10px;
-                width: 13%;
-                align-items: center;
-            }
-            
-            img {
-                display: none;
-            }
-            
-            .landing {
-                height: 90vh;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            
-            .landing h1 {
-                margin: 100px;
-                font-size: 50px;
-                color: #f0f2f5;
-            }
-            
-            @media screen and (max-width: 768px) {
-                img {
-                    display: block;
-                    width: 50px;
-                    height: 50px;
-                    margin-bottom: 20px;
-                }
-                .logoHeader {
-                    display: none;
-                }
-                .hamb {
-                    position: relative;
-                }
-                .hamburger {
-                    position: absolute;
-                    cursor: pointer;
-                    right: 5%;
-                    top: 50%;
-                    transform: translate(-5%, -50%);
-                    z-index: 2;
-                }
-                .nav-links {
-                    position: fixed;
-                    background: #010f2b;
-                    height: 100vh;
-                    width: 100%;
-                    flex-direction: column;
-                    clip-path: circle(100px at 90% -10%);
-                    -webkit-clip-path: circle(100px at 90% -10%);
-                    transition: all 1s ease-out;
-                    pointer-events: none;
-                }
-                .nav-links.open {
-                    clip-path: circle(1000px at 90% -10%);
-                    -webkit-clip-path: circle(1000px at 90% -10%);
-                    pointer-events: all;
-                }
-            }
-            
-            .landing {
-                flex-direction: column;
-            }
-            
-            .nav-links .link {
-                opacity: 0;
-                /*Para que opacidad 0?*/
-            }
-            
-            .nav-links .link .item {
-                font-size: 25px;
-            }
-            
-            .nav-links .link:nth-child(1) {
-                transition: all 0.5s ease 0.2s;
-            }
-            
-            .nav-links.link:nth-child(2) {
-                transition: all 0.5s ease 0.4s;
-            }
-            
-            .nav-links.link:nth-child(3) {
-                transition: all 0.5s ease 0.6s;
-            }
-            
-            .link.fade {
-                opacity: 1;
-            }
-            /* Efectos de hover underline */
-            
-            .link {
-                /* margin: 150px auto 0;  */
-                padding: 0;
-                list-style: none;
-                display: table;
-                width: 600px;
-                text-align: center;
-            }
-            
-            .link {
-                display: table-cell;
-                position: relative;
-                padding: 15px 0;
-            }
-            
-            .item {
-                color: #fff;
-                text-transform: uppercase;
-                text-decoration: none;
-                letter-spacing: 0.15em;
-                display: inline-block;
-                padding: 15px 20px;
-                position: relative;
-            }
-            
-            .link:after {
-                background: none repeat scroll 0 0 transparent;
-                bottom: 0;
-                content: "";
-                display: block;
-                height: 2px;
-                left: 50%;
-                position: absolute;
-                background: #b08070;
-                transition: width 0.3s ease 0s, left 0.3s ease 0s;
-                width: 0;
-            }
-            
-            .link:hover:after {
-                width: 50%;
-                left: 23%;
-            }
-            /* ----------------------- NICO ------------------------------ */
-            
-            footer {
-                background-color: #343a40;
-            }
-            
-            .social-icons {
-                display: flex;
-                justify-content: center;
-            }
-            
-            .social-icon {
-                margin: .5rem;
-            }
-            
-            @media(min-width: 992px) {
-                .social-icons {
-                    flex-direction: column;
-                    align-items: center;
-                }
-                .social-icon {
-                    margin: 1rem;
-                }
-                .center-lg {
-                    text-align: center;
-                }
-            }
-            
-            .icon {
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                height: 2.5rem;
-                width: 2.5rem;
-                color: #f7b26a;
-                font-size: 2.5rem;
-            }
-            
-            .social-icon:hover {
-                text-decoration: #f7b26a;
-                color: tomato;
-            }
-            
-            .copyright-legal {
-                background-color: #181a1d;
-            }
-            /*PALETA DE COLORES */
-            
-            .color1 {
-                color: #0c1113;
-            }
-            
-            .bg-color1 {
-                background-color: #0c1113;
-            }
-            
-            .color2 {
-                color: #c02020;
-            }
-            
-            .bg-color2 {
-                background-color: #c02020;
-            }
-            
-            .color3 {
-                color: #f0e0a0;
-            }
-            
-            .bg-color3 {
-                background-color: #f0e0a0;
-            }
-            
-            .color4 {
-                color: #b08070;
-            }
-            
-            .bg-color4 {
-                background-color: #b08070;
-            }
-            
-            .color5 {
-                color: #838486;
-            }
-            
-            .bg-color5 {
-                background-color: #838486;
-            }
-            
-            .color6 {
-                color: #f0f2f5;
-            }
-            
-            .bg-color6 {
-                background-color: #f0f2f5;
-            }
-            /****************************************************************************/
-            /*! INICIO : ESTILO MODAL CREAR NUEVA PELICULA */
-            /*.inputEfect:focus {
+    /*PAGE ERROR STYLE*/
+    
+    @keyframes noise {
+        0% {
+            background-position: 1000px;
+        }
+    }
+    
+    .error-404 {
+        text-align: center;
+        overflow: hidden;
+        margin: 0px;
+        background: rgb(31, 31, 31);
+        height: 100vh;
+        box-shadow: 0px 0px 122px 25px black inset;
+        background-image: url('https://i.imgur.com/eg7VIun.jpg');
+        background-repeat: repeat;
+        animation: noise 20ms linear infinite;
+    }
+    
+    .glitch-wrapper {
+        padding-top: 180px;
+        width: 100vw;
+        text-align: center;
+        animation: glitch 2s linear infinite;
+        margin-bottom: 110px;
+    }
+    
+    .glitch-text,
+    .buttonError {
+        font-family: monospace;
+        font-weight: bold;
+    }
+    
+    .glitch-text::before {
+        content: 'ERROR 404';
+        color: black;
+        text-shadow: 0px 0px 5px 10px black!IMPORTANT;
+        -webkit-filter: blur(7px);
+        -moz-filter: blur(7px);
+        -o-filter: blur(7x);
+        -ms-filter: blur(7px);
+        filter: blur(7px);
+        display: block;
+        position: absolute;
+        z-index: -1;
+        font-size: 3em;
+        left: 0px;
+        right: 0px;
+        margin-top: -30px;
+        opacity: .5;
+    }
+    
+    .glitch-text {
+        position: relative;
+        z-index: 2;
+        opacity: .9;
+        margin: 0 auto;
+        text-shadow: 0px 0px 3px white;
+        animation: glitch 3s infinite;
+        cursor: pointer;
+        font-size: 2em;
+        color: white;
+    }
+    
+    .buttonError {
+        display: block;
+        opacity: .6;
+        box-shadow: 0px 0px 3px 6px white, 0px 0px 3px white;
+        text-shadow: 0px 0px 3px black;
+        background: white;
+        border: 0px;
+        padding: 7px;
+        margin: 0 auto;
+        outline: none;
+        cursor: pointer;
+        margin-top: 30px;
+        font-size: 16px;
+        transition: 200ms;
+    }
+    
+    .buttonError:hover,
+    .buttonError:focus,
+    .buttonError:active {
+        box-shadow: 0px 0px 3px 6px black;
+        text-shadow: 0px 0px 3px white;
+        background: black;
+        color: white;
+        transition: 200ms;
+        border-top-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    /* JUST RANDOM VALUES HERE! */
+    
+    @keyframes glitch {
+        3% {
+            text-shadow: 7px 7px 0px red;
+        }
+        6% {
+            text-shadow: -9px 4px 0px blue;
+            transform: translate(4px, -10px) skewX(3240deg);
+        }
+        7% {
+            text-shadow: 3px -4px 0px green;
+        }
+        9% {
+            text-shadow: 0px 0px 3px white;
+            transform: translate(0px, 0px) skewX(0deg);
+        }
+        2%,
+        54% {
+            transform: translateX(0px) skew(0deg);
+        }
+        55% {
+            transform: translate(-2px, 6px) skew(-5530deg);
+        }
+        56% {
+            text-shadow: 0px 0px 3px white;
+            transform: translate(0px, 0px) skew(0deg);
+        }
+        57% {
+            text-shadow: 7px 7px 0px red;
+            transform: translate(4px, -10px) skew(-70deg);
+        }
+        58% {
+            text-shadow: 0px 0px 3px white;
+            transform: translate(0px, 0px) skew(0deg);
+        }
+        62% {
+            text-shadow: 3px -4px 0px green;
+            transform: translate(0px, 20px) skew(0deg);
+        }
+        63% {
+            text-shadow: 0px 0px 3px white;
+            transform: translate(4px, -2px) skew(0deg);
+        }
+        64% {
+            transform: translate(1px, 3px);
+            skew: -230deg;
+        }
+        65% {
+            transform: translate(-7px, 2px);
+            skew: 120deg;
+        }
+        66% {
+            transform: translate(0px, 0px) skew(0deg);
+        }
+    }
+    /*<------------------------INICIO CARRUSSEL-DIEGO --------------------->*/
+    
+    .movie-card {
+        transition: transform 0.5 ease;
+    }
+    
+    .movie-card:hover {
+        transform: scale(1.3);
+    }
+    
+    .resume {
+        background-color: rgba(0, 0, 0, 0.6);
+        width: 13rem;
+        height: 15rem;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        cursor: default;
+        font-size: 0.7rem;
+    }
+    
+    .resume:hover {
+        opacity: 1;
+    }
+    
+    .movie-title {
+        cursor: default;
+    }
+    
+    .movie {
+        width: 13rem;
+        height: 15rem;
+        margin: 10px;
+        background-size: 100% 100%;
+        box-shadow: -10px 10px rgba(0, 0, 0, 0.1), 0 15px 30px rgba(0, 0, 0, .65);
+    }
+    
+    .carrousel {
+        margin-left: 15px;
+        width: 90%;
+        height: auto;
+    }
+    
+    .movie-resume {
+        height: 8rem;
+        overflow: scroll;
+    }
+    
+    .movie-resume::-webkit-scrollbar {
+        width: 5px;
+        color: #a9bdc5;
+    }
+    
+    .movie-resume::-webkit-scrollbar-thumb {
+        background: #c02020;
+        border-radius: 10px;
+        border-right: 2px;
+    }
+    
+    .carrousel {
+        overflow: hidden;
+    }
+    
+    .carrousel-Comedia,
+    .carrousel-Terror,
+    .carrousel-Drama,
+    .carrousel-Acción,
+    .carrousel-Ficción {
+        overflow-x: scroll;
+        scroll-behavior: smooth;
+    }
+    
+    .carrousel-Comedia::-webkit-scrollbar,
+    .carrousel-Terror::-webkit-scrollbar,
+    .carrousel-Drama::-webkit-scrollbar,
+    .carrousel-Acción::-webkit-scrollbar,
+    .carrousel-Ficción::-webkit-scrollbar {
+        display: none;
+    }
+    /*<------------------------FIN CARRUSSEL-DIEGO --------------------->*/
+    /* Header y Navbar*/
+    
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .logoContainer {
+        background-color: #010f2b;
+        height: 15px;
+        ;
+    }
+    
+    .hamb {
+        height: 10vh;
+        background: #010f2b;
+    }
+    
+    .nav-links {
+        display: flex;
+        list-style: none;
+        width: 50%;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: auto;
+    }
+    
+    .nav-links {
+        color: #f0f2f5;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    
+    .link {
+        color: #f0f2f5;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    
+    .item {
+        color: #f0f2f5;
+        text-decoration: none;
+        font-size: 16px;
+    }
+    
+    .logoHeader {
+        display: block;
+        margin-left: 20px;
+        padding-top: 10px;
+        width: 13%;
+        align-items: center;
+    }
+    
+    img {
+        display: none;
+    }
+    
+    .landing {
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .landing h1 {
+        margin: 100px;
+        font-size: 50px;
+        color: #f0f2f5;
+    }
+    
+    @media screen and (max-width: 768px) {
+        img {
+            display: block;
+            width: 50px;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+        .logoHeader {
+            display: none;
+        }
+        .hamb {
+            position: relative;
+        }
+        .hamburger {
+            position: absolute;
+            cursor: pointer;
+            right: 5%;
+            top: 50%;
+            transform: translate(-5%, -50%);
+            z-index: 2;
+        }
+        .nav-links {
+            position: fixed;
+            background: #010f2b;
+            height: 100vh;
+            width: 100%;
+            flex-direction: column;
+            clip-path: circle(100px at 90% -10%);
+            -webkit-clip-path: circle(100px at 90% -10%);
+            transition: all 1s ease-out;
+            pointer-events: none;
+        }
+        .nav-links.open {
+            clip-path: circle(1000px at 90% -10%);
+            -webkit-clip-path: circle(1000px at 90% -10%);
+            pointer-events: all;
+        }
+    }
+    
+    .landing {
+        flex-direction: column;
+    }
+    
+    .nav-links .link {
+        opacity: 0;
+        /*Para que opacidad 0?*/
+    }
+    
+    .nav-links .link .item {
+        font-size: 25px;
+    }
+    
+    .nav-links .link:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+    
+    .nav-links.link:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+    
+    .nav-links.link:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+    
+    .link.fade {
+        opacity: 1;
+    }
+    /* Efectos de hover underline */
+    
+    .link {
+        /* margin: 150px auto 0;  */
+        padding: 0;
+        list-style: none;
+        display: table;
+        width: 600px;
+        text-align: center;
+    }
+    
+    .link {
+        display: table-cell;
+        position: relative;
+        padding: 15px 0;
+    }
+    
+    .item {
+        color: #fff;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.15em;
+        display: inline-block;
+        padding: 15px 20px;
+        position: relative;
+    }
+    
+    .link:after {
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #b08070;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+    }
+    
+    .link:hover:after {
+        width: 50%;
+        left: 23%;
+    }
+    /* ----------------------- NICO ------------------------------ */
+    
+    footer {
+        background-color: #343a40;
+    }
+    
+    .social-icons {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .social-icon {
+        margin: .5rem;
+    }
+    
+    @media(min-width: 992px) {
+        .social-icons {
+            flex-direction: column;
+            align-items: center;
+        }
+        .social-icon {
+            margin: 1rem;
+        }
+        .center-lg {
+            text-align: center;
+        }
+    }
+    
+    .icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 2.5rem;
+        width: 2.5rem;
+        color: #f7b26a;
+        font-size: 2.5rem;
+    }
+    
+    .social-icon:hover {
+        text-decoration: #f7b26a;
+        color: tomato;
+    }
+    
+    .copyright-legal {
+        background-color: #181a1d;
+    }
+    /*PALETA DE COLORES */
+    
+    .color1 {
+        color: #0c1113;
+    }
+    
+    .bg-color1 {
+        background-color: #0c1113;
+    }
+    
+    .color2 {
+        color: #c02020;
+    }
+    
+    .bg-color2 {
+        background-color: #c02020;
+    }
+    
+    .color3 {
+        color: #f0e0a0;
+    }
+    
+    .bg-color3 {
+        background-color: #f0e0a0;
+    }
+    
+    .color4 {
+        color: #b08070;
+    }
+    
+    .bg-color4 {
+        background-color: #b08070;
+    }
+    
+    .color5 {
+        color: #838486;
+    }
+    
+    .bg-color5 {
+        background-color: #838486;
+    }
+    
+    .color6 {
+        color: #f0f2f5;
+    }
+    
+    .bg-color6 {
+        background-color: #f0f2f5;
+    }
+    /****************************************************************************/
+    /*! INICIO : ESTILO MODAL CREAR NUEVA PELICULA */
+    /*.inputEfect:focus {
     border: 6px solid #f0e0a0;
     color: black;
 }
@@ -514,445 +514,473 @@
     width: 100%;
 }
 */
-            
-            .buttonCM:hover {
-                background-color: #DC143C;
-                color: #FFF8DC;
-            }
-            /*! FIN : ESTILO MODAL CREAR NUEVA PELICULA */
-            /*Hero-RE*/
-            
-            .img-hero {
-                max-width: 100%;
-            }
-            
-            .hero {
-                max-height: 50vw;
-            }
-            
-            .data-hero {
-                background: rgba(255, 255, 255, 0.3);
-                border-radius: 15px;
-                background-position: center top;
-            }
-            
-            .title-white {
-                font-size: 5vw;
-                color: white;
-            }
-            
-            .title-black {
-                font-size: 5vw;
-                color: black;
-            }
-            
-            .p-white {
-                color: white;
-                font-size: 1.6vw;
-                font-weight: bolder;
-            }
-            
-            .p-black {
-                color: black;
-                font-size: 1.6vw;
-                font-weight: bolder;
-            }
-            
-            .btn-hero {
-                background-color: transparent;
-                border-radius: 25px;
-                padding: 10px 25px;
-                font-weight: bolder;
-            }
-            
-            .btn-white {
-                border: 2px solid white;
-                color: white;
-            }
-            
-            .btn-black {
-                border: 2px solid black;
-                color: black;
-            }
-            
-            .btn-white:hover {
-                border: 2px solid black;
-                color: black;
-            }
-            
-            .btn-black:hover {
-                border: 2px solid white;
-                color: white;
-            }
-            
-            @media (max-width:990px) {
-                .btn-hero {
-                    padding: 5px;
-                    font-size: 10px;
-                }
-                /*! FIN : ESTILO MODAL CREAR NUEVA PELICULA */
-                /*Hero-RE*/
-                .img-hero {
-                    max-width: 100%;
-                }
-                .hero {
-                    max-height: 50vw;
-                }
-                .title-white {
-                    font-size: 5vw;
-                    color: white;
-                }
-                .title-black {
-                    font-size: 5vw;
-                    color: black;
-                }
-                .p-white {
-                    color: white;
-                    font-size: 1.6vw;
-                    font-weight: bolder;
-                }
-                .p-black {
-                    color: black;
-                    font-size: 1.6vw;
-                    font-weight: bolder;
-                }
-                .btn-hero {
-                    background-color: transparent;
-                    border-radius: 25px;
-                    padding: 10px 25px;
-                    font-weight: bolder;
-                }
-                body::-webkit-scrollbar {
-                    width: 10px;
-                    color: #0c1113;
-                }
-                body::-webkit-scrollbar-thumb {
-                    background: #F0E0A0;
-                    border-radius: 10px;
-                    border-right: 2px;
-                }
-                /**************************************************************************************************/
-                /************************INICIO - ESTILO: FORMULARIO PARA REGISTRARSE******************************/
-                /**************************************************************************************************/
-                .fondo-body-form {
-                    background-image: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 50%), url('https://i.blogs.es/aa91a3/cine-/2560_3000.jpg');
-                    background-repeat: no-repeat;
-                    background-position: center;
-                }
-                .formulario {
-                    width: 600px;
-                    padding: 0;
-                    margin: auto;
-                }
-                .formulario_boton {
-                    border: 0;
-                    outline: none;
-                    border-radius: 5px;
-                    cursor: pointer;
-                    transition: all .5s ease;
-                    -webkit-appearance: none;
-                    margin-right: auto;
-                    margin-top: 0.8em;
-                    text-align: center;
-                }
-                .formulario_boton:hover {
-                    box-shadow: 5px 5px 10px #f0e0a0;
-                }
-                .formulario_grupo_input {
-                    position: relative;
-                }
-                .formulario_input {
-                    width: 100%;
-                    background-image: none;
-                    background: none;
-                    border: 1px solid #c02020;
-                    color: #f0e0a0;
-                    border-top: none;
-                    border-left: none;
-                    border-right: none;
-                    border-radius: 0;
-                    transition: all 0.5s ease;
-                    border-radius: 6px;
-                    font-size: 0.85em;
-                }
-                .formulario_input_select {
-                    width: 100%;
-                    background-image: none;
-                    background-color: black;
-                    border: 1px solid #c02020;
-                    color: #f0e0a0;
-                    /* border-top: none;
+    
+    .buttonCM:hover {
+        background-color: #DC143C;
+        color: #FFF8DC;
+    }
+    /*! FIN : ESTILO MODAL CREAR NUEVA PELICULA */
+    /*Hero-RE*/
+    
+    .img-hero {
+        max-width: 100%;
+    }
+    
+    .hero {
+        max-height: 50vw;
+    }
+    
+    .data-hero {
+        background: rgba(255, 255, 255, 0.3);
+        border-radius: 15px;
+        background-position: center top;
+    }
+    
+    .title-white {
+        font-size: 5vw;
+        color: white;
+    }
+    
+    .title-black {
+        font-size: 5vw;
+        color: black;
+    }
+    
+    .p-white {
+        color: white;
+        font-size: 1.6vw;
+        font-weight: bolder;
+    }
+    
+    .p-black {
+        color: black;
+        font-size: 1.6vw;
+        font-weight: bolder;
+    }
+    
+    .btn-hero {
+        background-color: transparent;
+        border-radius: 25px;
+        padding: 10px 25px;
+        font-weight: bolder;
+    }
+    
+    .btn-white {
+        border: 2px solid white;
+        color: white;
+    }
+    
+    .btn-black {
+        border: 2px solid black;
+        color: black;
+    }
+    
+    .btn-white:hover {
+        border: 2px solid black;
+        color: black;
+    }
+    
+    .btn-black:hover {
+        border: 2px solid white;
+        color: white;
+    }
+    
+    @media (max-width:990px) {
+        .btn-hero {
+            padding: 5px;
+            font-size: 10px;
+        }
+        /*! FIN : ESTILO MODAL CREAR NUEVA PELICULA */
+        /*Hero-RE*/
+        .img-hero {
+            max-width: 100%;
+        }
+        .hero {
+            max-height: 50vw;
+        }
+        .title-white {
+            font-size: 5vw;
+            color: white;
+        }
+        .title-black {
+            font-size: 5vw;
+            color: black;
+        }
+        .p-white {
+            color: white;
+            font-size: 1.6vw;
+            font-weight: bolder;
+        }
+        .p-black {
+            color: black;
+            font-size: 1.6vw;
+            font-weight: bolder;
+        }
+        .btn-hero {
+            background-color: transparent;
+            border-radius: 25px;
+            padding: 10px 25px;
+            font-weight: bolder;
+        }
+    }
+    
+    body::-webkit-scrollbar {
+        width: 10px;
+        color: #0c1113;
+    }
+    
+    body::-webkit-scrollbar-thumb {
+        background: #F0E0A0;
+        border-radius: 10px;
+        border-right: 2px;
+    }
+    /**************************************************************************************************/
+    /************************INICIO - ESTILO: FORMULARIO PARA REGISTRARSE******************************/
+    /**************************************************************************************************/
+    
+    .fondo-body-form {
+        background-image: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 50%), url('https://i.blogs.es/aa91a3/cine-/2560_3000.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
+    .formulario {
+        width: 600px;
+        padding: 0;
+        margin: auto;
+    }
+    
+    .formulario_boton {
+        border: 0;
+        outline: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all .5s ease;
+        -webkit-appearance: none;
+        margin-right: auto;
+        margin-top: 0.8em;
+        text-align: center;
+    }
+    
+    .formulario_boton:hover {
+        box-shadow: 5px 5px 10px #f0e0a0;
+    }
+    
+    .formulario_grupo_input {
+        position: relative;
+    }
+    
+    .formulario_input {
+        width: 100%;
+        background-image: none;
+        background: none;
+        border: 1px solid #c02020;
+        color: #f0e0a0;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
+        transition: all 0.5s ease;
+        border-radius: 6px;
+        font-size: 0.85em;
+    }
+    
+    .formulario_input_select {
+        width: 100%;
+        background-image: none;
+        background-color: black;
+        border: 1px solid #c02020;
+        color: #f0e0a0;
+        /* border-top: none;
     border-left: none;
     border-right: none;*/
-                    border-radius: 0;
-                    transition: all 0.5s ease;
-                    border-radius: 6px;
-                    font-size: 0.85em;
-                }
-                .formulario_input:focus {
-                    outline: none;
-                    border-color: #f0e0a0;
-                }
-                .formulario_input_error {
-                    font-size: 0.7em;
-                    margin-bottom: 0;
-                    font-style: oblique;
-                    display: none;
-                }
-                .formulario_input_error_activo {
-                    display: block;
-                }
-                .formulario_validacion_estado {
-                    position: absolute;
-                    right: 10px;
-                    bottom: 15px;
-                    z-index: 100;
-                    font-size: 16px;
-                    opacity: 0;
-                }
-                .formulario_label {
-                    transform: translatex(1px);
-                    left: 5px;
-                    color: rgba(#c02020, .10);
-                    transition: all 0.25s ease;
-                    backface-visibility: hidden;
-                    pointer-events: none;
-                    font-size: 1rem;
-                }
-                .formulario_label_activo {
-                    transform: translateY(4px);
-                    font-size: 1rem;
-                    color: #c02020;
-                }
-                .formulario_mensaje {
-                    height: 1em;
-                    line-height: 0.85em;
-                    color: #c02020;
-                    padding: 0 0.80em;
-                    border-radius: 2px;
-                    display: none;
-                }
-                .formulario_mensaje_activo {
-                    display: block;
-                }
-                .formulario_mensaje p {
-                    margin: 0;
-                    font-style: oblique;
-                }
-                .formulario_mensaje small {
-                    margin: 0;
-                }
-                .formulario_legend {
-                    border: 3px solid #f0e0a0;
-                    padding: 6px;
-                    border-radius: 5px;
-                }
-                .fieldset {
-                    border: 3px solid #c02020;
-                    padding: 6px;
-                    display: flex;
-                    width: 600px;
-                    justify-content: center;
-                    align-content: center;
-                }
-                .formulario_mensaje_exito {
-                    height: 0.7em;
-                    color: #119200;
-                    display: none;
-                }
-                .formulario_mensaje_exito_activo {
-                    display: block;
-                }
-                .formulario_grupo_correcto .formulario_validacion_estado {
-                    color: #1ed12d;
-                    opacity: 1;
-                }
-                @media (max-width:990px) {
-                    .btn-hero {
-                        padding: 5px;
-                        font-size: 10px;
-                    }
-                    .img-hero {
-                        width: 13rem;
-                        height: 15rem;
-                    }
-                }
-                /*********************Medias querys*************************************/
-                @media (max-width: 700px) {
-                    .fondo-body-form {
-                        background-image: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 50%), url('https://i.blogs.es/aa91a3/cine-/2560_3000.jpg');
-                        background-repeat: no-repeat;
-                        background-position: center;
-                    }
-                    .formulario {
-                        width: 600px;
-                        padding: 0;
-                        margin: auto;
-                    }
-                    .formulario_boton {
-                        border: 0;
-                        outline: none;
-                        border-radius: 5px;
-                        cursor: pointer;
-                        transition: all .5s ease;
-                        -webkit-appearance: none;
-                        margin-right: auto;
-                        margin-top: 0.8em;
-                        text-align: center;
-                    }
-                    .formulario_boton:hover {
-                        box-shadow: 5px 5px 10px #f0e0a0;
-                    }
-                    .formulario_grupo_input {
-                        position: relative;
-                    }
-                    .formulario_input {
-                        width: 100%;
-                        background-image: none;
-                        background: none;
-                        border: 1px solid #c02020;
-                        color: #f0e0a0;
-                        border-top: none;
-                        border-left: none;
-                        border-right: none;
-                        border-radius: 0;
-                        transition: all 0.5s ease;
-                        border-radius: 6px;
-                        font-size: 0.85em;
-                    }
-                    .formulario_input_select {
-                        width: 100%;
-                        background-image: none;
-                        background-color: black;
-                        border: 1px solid #c02020;
-                        color: #f0e0a0;
-                        /* border-top: none;
+        border-radius: 0;
+        transition: all 0.5s ease;
+        border-radius: 6px;
+        font-size: 0.85em;
+    }
+    
+    .formulario_input:focus {
+        outline: none;
+        border-color: #f0e0a0;
+    }
+    
+    .formulario_input_error {
+        font-size: 0.7em;
+        margin-bottom: 0;
+        font-style: oblique;
+        display: none;
+    }
+    
+    .formulario_input_error_activo {
+        display: block;
+    }
+    
+    .formulario_validacion_estado {
+        position: absolute;
+        right: 10px;
+        bottom: 15px;
+        z-index: 100;
+        font-size: 16px;
+        opacity: 0;
+    }
+    
+    .formulario_label {
+        transform: translatex(1px);
+        left: 5px;
+        color: rgba(#c02020, .10);
+        transition: all 0.25s ease;
+        backface-visibility: hidden;
+        pointer-events: none;
+        font-size: 1rem;
+    }
+    
+    .formulario_label_activo {
+        transform: translateY(4px);
+        font-size: 1rem;
+        color: #c02020;
+    }
+    
+    .formulario_mensaje {
+        height: 1em;
+        line-height: 0.85em;
+        color: #c02020;
+        padding: 0 0.80em;
+        border-radius: 2px;
+        display: none;
+    }
+    
+    .formulario_mensaje_activo {
+        display: block;
+    }
+    
+    .formulario_mensaje p {
+        margin: 0;
+        font-style: oblique;
+    }
+    
+    .formulario_mensaje small {
+        margin: 0;
+    }
+    
+    .formulario_legend {
+        border: 3px solid #f0e0a0;
+        padding: 6px;
+        border-radius: 5px;
+    }
+    
+    .fieldset {
+        border: 3px solid #c02020;
+        padding: 6px;
+        display: flex;
+        width: 600px;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .formulario_mensaje_exito {
+        height: 0.7em;
+        color: #119200;
+        display: none;
+    }
+    
+    .formulario_mensaje_exito_activo {
+        display: block;
+    }
+    
+    .formulario_grupo_correcto .formulario_validacion_estado {
+        color: #1ed12d;
+        opacity: 1;
+    }
+    
+    @media (max-width:990px) {
+        .btn-hero {
+            padding: 5px;
+            font-size: 10px;
+        }
+        .img-hero {
+            width: 13rem;
+            height: 15rem;
+        }
+    }
+    /*********************Medias querys*************************************/
+    
+    @media (max-width: 700px) {
+        .fondo-body-form {
+            background-image: linear-gradient(rgba(0, 0, 0, .50) 0%, rgba(0, 0, 0, .50) 50%), url('https://i.blogs.es/aa91a3/cine-/2560_3000.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .formulario {
+            width: 600px;
+            padding: 0;
+            margin: auto;
+        }
+        .formulario_boton {
+            border: 0;
+            outline: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all .5s ease;
+            -webkit-appearance: none;
+            margin-right: auto;
+            margin-top: 0.8em;
+            text-align: center;
+        }
+        .formulario_boton:hover {
+            box-shadow: 5px 5px 10px #f0e0a0;
+        }
+        .formulario_grupo_input {
+            position: relative;
+        }
+        .formulario_input {
+            width: 100%;
+            background-image: none;
+            background: none;
+            border: 1px solid #c02020;
+            color: #f0e0a0;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            border-radius: 0;
+            transition: all 0.5s ease;
+            border-radius: 6px;
+            font-size: 0.85em;
+        }
+        .formulario_input_select {
+            width: 100%;
+            background-image: none;
+            background-color: black;
+            border: 1px solid #c02020;
+            color: #f0e0a0;
+            /* border-top: none;
     border-left: none;
     border-right: none;*/
-                        border-radius: 0;
-                        transition: all 0.5s ease;
-                        border-radius: 6px;
-                        font-size: 0.85em;
-                    }
-                    .formulario_input:focus {
-                        outline: none;
-                        border-color: #f0e0a0;
-                    }
-                    .formulario_input_error {
-                        font-size: 0.7em;
-                        margin-bottom: 0;
-                        font-style: oblique;
-                        display: none;
-                    }
-                    .formulario_input_error_activo {
-                        display: block;
-                    }
-                    .formulario_validacion_estado {
-                        position: absolute;
-                        right: 10px;
-                        bottom: 15px;
-                        z-index: 100;
-                        font-size: 16px;
-                        opacity: 0;
-                    }
-                    .formulario_label {
-                        transform: translatex(1px);
-                        left: 5px;
-                        color: rgba(#c02020, .10);
-                        transition: all 0.25s ease;
-                        backface-visibility: hidden;
-                        pointer-events: none;
-                        font-size: 1rem;
-                    }
-                    .formulario_label_activo {
-                        transform: translateY(4px);
-                        font-size: 1rem;
-                        color: #c02020;
-                    }
-                    .formulario_mensaje {
-                        height: 1em;
-                        line-height: 0.85em;
-                        color: #c02020;
-                        padding: 0 0.80em;
-                        border-radius: 2px;
-                        display: none;
-                    }
-                    .formulario_mensaje_activo {
-                        display: block;
-                    }
-                    .formulario_mensaje p {
-                        margin: 0;
-                        font-style: oblique;
-                    }
-                    .formulario_mensaje small {
-                        margin: 0;
-                    }
-                    .formulario_legend {
-                        border: 3px solid #f0e0a0;
-                        padding: 6px;
-                        border-radius: 5px;
-                    }
-                    .fieldset {
-                        border: 3px solid #c02020;
-                        padding: 6px;
-                        display: flex;
-                        width: 600px;
-                        justify-content: center;
-                        align-content: center;
-                    }
-                    .formulario_mensaje_exito {
-                        height: 0.7em;
-                        color: #119200;
-                        display: none;
-                    }
-                    .formulario_mensaje_exito_activo {
-                        display: block;
-                    }
-                    .formulario_grupo_correcto .formulario_validacion_estado {
-                        color: #1ed12d;
-                        opacity: 1;
-                    }
-                    .formulario_grupo_incorrecto .formulario_validacion_estado {
-                        color: #bb2929;
-                        opacity: 1;
-                    }
-                    .custom-control-input:checked~.custom-control-label::before {
-                        color: #fff;
-                        border-color: red;
-                        background-color: red;
-                    }
-                    .img-hero {
-                        width: 13rem;
-                        height: 15rem;
-                    }
-                }
-                /*********************Medias querys*************************************/
-                @media (max-width: 700px) {
-                    .fondo-body-form {
-                        background-color: #0c1113;
-                        background-image: none;
-                    }
-                    .formulario {
-                        width: 100%;
-                        padding: 0.25em;
-                        display: flex;
-                        align-content: center;
-                    }
-                    .formulario_boton {
-                        display: inline-block;
-                    }
-                    .formulario_mensaje {
-                        padding: 0.8em;
-                        margin: 0;
-                        text-align: center;
-                    }
-                    .formulario_mensaje_exito {
-                        padding: 0.6em;
-                        margin: 0;
-                        text-align: center;
-                    }
-                }
-                /*
+            border-radius: 0;
+            transition: all 0.5s ease;
+            border-radius: 6px;
+            font-size: 0.85em;
+        }
+        .formulario_input:focus {
+            outline: none;
+            border-color: #f0e0a0;
+        }
+        .formulario_input_error {
+            font-size: 0.7em;
+            margin-bottom: 0;
+            font-style: oblique;
+            display: none;
+        }
+        .formulario_input_error_activo {
+            display: block;
+        }
+        .formulario_validacion_estado {
+            position: absolute;
+            right: 10px;
+            bottom: 15px;
+            z-index: 100;
+            font-size: 16px;
+            opacity: 0;
+        }
+        .formulario_label {
+            transform: translatex(1px);
+            left: 5px;
+            color: rgba(#c02020, .10);
+            transition: all 0.25s ease;
+            backface-visibility: hidden;
+            pointer-events: none;
+            font-size: 1rem;
+        }
+        .formulario_label_activo {
+            transform: translateY(4px);
+            font-size: 1rem;
+            color: #c02020;
+        }
+        .formulario_mensaje {
+            height: 1em;
+            line-height: 0.85em;
+            color: #c02020;
+            padding: 0 0.80em;
+            border-radius: 2px;
+            display: none;
+        }
+        .formulario_mensaje_activo {
+            display: block;
+        }
+        .formulario_mensaje p {
+            margin: 0;
+            font-style: oblique;
+        }
+        .formulario_mensaje small {
+            margin: 0;
+        }
+        .formulario_legend {
+            border: 3px solid #f0e0a0;
+            padding: 6px;
+            border-radius: 5px;
+        }
+        .fieldset {
+            border: 3px solid #c02020;
+            padding: 6px;
+            display: flex;
+            width: 600px;
+            justify-content: center;
+            align-content: center;
+        }
+        .formulario_mensaje_exito {
+            height: 0.7em;
+            color: #119200;
+            display: none;
+        }
+        .formulario_mensaje_exito_activo {
+            display: block;
+        }
+        .formulario_grupo_correcto .formulario_validacion_estado {
+            color: #1ed12d;
+            opacity: 1;
+        }
+        .formulario_grupo_incorrecto .formulario_validacion_estado {
+            color: #bb2929;
+            opacity: 1;
+        }
+        .custom-control-input:checked~.custom-control-label::before {
+            color: #fff;
+            border-color: red;
+            background-color: red;
+        }
+        .img-hero {
+            width: 13rem;
+            height: 15rem;
+        }
+    }
+    /*********************Medias querys*************************************/
+    
+    @media (max-width: 700px) {
+        .fondo-body-form {
+            background-color: #0c1113;
+            background-image: none;
+        }
+        .formulario {
+            width: 100%;
+            padding: 0.25em;
+            display: flex;
+            align-content: center;
+        }
+        .formulario_boton {
+            display: inline-block;
+        }
+        .formulario_mensaje {
+            padding: 0.8em;
+            margin: 0;
+            text-align: center;
+        }
+        .formulario_mensaje_exito {
+            padding: 0.6em;
+            margin: 0;
+            text-align: center;
+        }
+    }
+    /*
     @media (min-width: 360px) {
         .fondo-body-form {
             background-color: #0c1113;
@@ -963,10 +991,11 @@
         }
     }
     */
-                /**************************************************************************************************/
-                /************************FIN - ESTILO: FORMULARIO PARA REGISTRARSE*********************************/
-                /**************************************************************************************************/
-                /* ESTILO PAGINA ADMIN */
-                .row-selected {
-                    border: 2px solid black;
-                }
+    /**************************************************************************************************/
+    /************************FIN - ESTILO: FORMULARIO PARA REGISTRARSE*********************************/
+    /**************************************************************************************************/
+    /* ESTILO PAGINA ADMIN */
+    
+    .row-selected {
+        border: 2px solid black;
+    }
