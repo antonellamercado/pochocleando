@@ -30,10 +30,10 @@ function createForm() {
 <div  class="my-1">
 <label>Genero:</label>
 <select id="generoInput" name="opciones" class="formulario_input_select inputEfect" required>
-  <option value="1">Accion</option>
+  <option value="1">Acción</option>
   <option value="2">Drama</option>
   <option value="3">Comedia</option>
-  <option value="4">Ciencia ficcion</option>
+  <option value="4">Ciencia Ficcion</option>
   <option value="4">Suspenso</option>
   <option value="4">Terror</option>
 </select>
@@ -120,10 +120,11 @@ formulario.addEventListener('submit', e => {
             categoria: categoriaPeli,
             anio: anioPeli,
             publicada: publicadaPeli,
-            detacada: destacadaPeli,
+            destacada: destacadaPeli,
             imagen: imagenPeli,
             video: videoPeli
         };
+        console.log(data);
         postNewMovie(data);
     })
     //! Realiza post con la nueva pelicula
