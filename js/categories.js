@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use strict'
 const containerCategories = document.getElementById("categories")
 const categories = document.createElement("h1");
@@ -415,3 +416,23 @@ favoritesList.addEventListener("click",deleteFav)
 //     }
 // })
 // document.addEventListener("click",deleteFav);
+=======
+const container = document.getElementById("root");
+const containerImage = document.getElementById("rootImage");
+
+function renderName(datos) {
+
+    const nombres = datos.map(dato => {
+        const list = document.createElement('li');
+        const list2 = document.createElement('img');
+        list.innerHTML = `${dato.nombre}`
+        list2.setAttribute('src', dato.imagen);
+        container.appendChild(list, list2);
+    });
+
+}
+
+fetch("http://localhost:3000/peliculas")
+    .then(response => response.json())
+    .then(data => renderName(data))
+>>>>>>> 52c5487dac5ccbab127ea4e03c49caf0118a8e56
