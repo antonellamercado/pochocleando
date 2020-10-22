@@ -1,8 +1,12 @@
 //!Funcion para renderizar formulario en el modal
 const formulario = document.getElementById("rootForm");
 const modalForm = document.getElementById('crearPeliModal');
+<<<<<<< HEAD
 formulario.classList.add('bg-color1');
 formulario.classList.add('color3');
+=======
+formulario.classList.add('styleForm');
+>>>>>>> 52c5487dac5ccbab127ea4e03c49caf0118a8e56
 
 function createForm() {
     const headerForm = document.createElement('div');
@@ -17,6 +21,7 @@ function createForm() {
     const bodyForm = document.createElement('div');
     bodyForm.innerHTML = `
 <div class="modal-body">
+<<<<<<< HEAD
 <div  class="my-1">
 <label>Nombre:</label>
 <input type=text id=nombreInput class="formulario_input" required >
@@ -29,7 +34,11 @@ function createForm() {
 <br>
 <div  class="my-1">
 <label>Genero:</label>
+<<<<<<< HEAD
 <select id="generoInput" name="opciones" class="formulario_input_select" required>
+=======
+<select id="generoInput" name="opciones" class="formulario_input_select inputEfect" required>
+>>>>>>> d283b22ae4715351c2f382fef501c25fa21d0fb0
   <option value="1">Acción</option>
   <option value="2">Drama</option>
   <option value="3">Comedia</option>
@@ -72,11 +81,49 @@ function createForm() {
   <input type="checkbox" class="custom-control-input color3" id="destacadaInput">
   <label class="custom-control-label" for="destacadaInput">Destacada</label>
 </div>
+=======
+<label>Nombre:</label>
+<input type=text id=nombreInput class=campos required>
+<br>
+<label>Descripcion:</label><br>
+<textarea id=descripcionInput class=campos required></textarea>
+<br>
+<label>Genero:</label>
+<select id="generoInput" name="opciones" class=campos required>
+  <option value="1">Accion</option>
+  <option value="2">Drama</option>
+  <option value="3">Comedia</option>
+  <option value="4">Ciencia ficcion</option>
+</select>
+<br>
+<br>
+<label class="mr-2">Director:</label>
+<input type=text id=directorInput class=campos required>
+<br>
+<label>Categoria:</label>
+<input type="text" id=categoriaInput class=campos required>
+<br>
+<label>Año:</label>
+<input type="text" id=anioInput class=campos required>
+<br>
+<div class="custom-control custom-switch form-group form-check">
+  <input type="checkbox" class="custom-control-input" id="publicadaInput" required>
+  <label class="custom-control-label" for="publicadaInput">Publicada</label>
+</div>
+>>>>>>> 52c5487dac5ccbab127ea4e03c49caf0118a8e56
 </div>
 `
     const footerForm = document.createElement('div');
     footerForm.innerHTML = `<div class="modal-footer">
+<<<<<<< HEAD
  <button  type="submit" class="btn bg-color2 color3">Crear</button>
+=======
+<<<<<<< HEAD
+ <button  type="submit" class="btn bg-color2 color3 buttonCM">Crear</button>
+=======
+ <button  type="submit" class="btn btn-primary colorButton">Crear</button>
+>>>>>>> 52c5487dac5ccbab127ea4e03c49caf0118a8e56
+>>>>>>> d283b22ae4715351c2f382fef501c25fa21d0fb0
 </div>
 `
     formulario.appendChild(headerForm);
@@ -85,6 +132,10 @@ function createForm() {
 
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 52c5487dac5ccbab127ea4e03c49caf0118a8e56
 createForm();
 
 //!Capturar datos de los inputs y enviar datos a db
@@ -98,6 +149,7 @@ formulario.addEventListener('submit', e => {
         const categoriaPeli = document.getElementById('categoriaInput').value;
         const anioPeli = document.getElementById('anioInput').value;
         const inputCheck = document.getElementById('publicadaInput');
+<<<<<<< HEAD
         let publicadaPeli = inputCheck.checked;
         const inputCheckDestacada = document.getElementById('destacadaInput');
         let destacadaPeli = inputCheckDestacada.checked;
@@ -112,13 +164,26 @@ formulario.addEventListener('submit', e => {
                publicadaPeli = 'false';
            }
            */
+=======
+        let publicadaPeli = '';
+        if (inputCheck.checked == true) {
+            publicadaPeli = 'true';
+        } else {
+            publicadaPeli = 'false';
+        }
+>>>>>>> 52c5487dac5ccbab127ea4e03c49caf0118a8e56
         const data = {
             nombre: nombrePeli,
             descripcion: descripcionPeli,
             director: directorPeli,
             genero: generoPeli,
             categoria: categoriaPeli,
+<<<<<<< HEAD
             año: anioPeli,
+=======
+            anio: anioPeli,
+<<<<<<< HEAD
+>>>>>>> d283b22ae4715351c2f382fef501c25fa21d0fb0
             publicada: publicadaPeli,
             destacada: destacadaPeli,
             imagen: imagenPeli,
@@ -128,8 +193,20 @@ formulario.addEventListener('submit', e => {
         postNewMovie(data);
     })
     //! Realiza post con la nueva pelicula
+<<<<<<< HEAD
 async function postNewMovie({ nombre, descripcion, director, genero, categoria, año, publicada, destacada, imagen, video }) {
 
+=======
+async function postNewMovie({ nombre, descripcion, director, genero, categoria, anio, publicada, destacada, imagen, video }) {
+=======
+            publicada: publicadaPeli
+        };
+        postNewMovie(data);
+    })
+    //! Realiza post con la nueva pelicula
+async function postNewMovie({ nombre, descripcion, director, genero, categoria, anio, publicada }) {
+>>>>>>> 52c5487dac5ccbab127ea4e03c49caf0118a8e56
+>>>>>>> d283b22ae4715351c2f382fef501c25fa21d0fb0
     const url = 'http://localhost:3000/peliculas';
     const response = await fetch(url, {
         method: 'POST',
@@ -137,9 +214,17 @@ async function postNewMovie({ nombre, descripcion, director, genero, categoria, 
             'Accept': 'application/json',
             'Content-Type': 'application/json'
         },
+<<<<<<< HEAD
 
         body: JSON.stringify({ nombre, descripcion, director, genero, categoria, año, publicada, destacada, imagen, video })
 
+=======
+<<<<<<< HEAD
+        body: JSON.stringify({ nombre, descripcion, director, genero, categoria, anio, publicada, destacada, imagen, video })
+=======
+        body: JSON.stringify({ nombre, descripcion, director, genero, categoria, anio, publicada })
+>>>>>>> 52c5487dac5ccbab127ea4e03c49caf0118a8e56
+>>>>>>> d283b22ae4715351c2f382fef501c25fa21d0fb0
     })
     const newMovie = await response.json();
     console.log(newMovie);

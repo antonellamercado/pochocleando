@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use strict'
 const containerCategories = document.getElementById("categories")
 const categories = document.createElement("h1");
@@ -216,6 +217,7 @@ function getFavsLS() {
     return JSON.parse(localStorage.getItem('favs'));
 }
 
+<<<<<<< HEAD
 function saveFavLS(favInfo)
 {
     let favs = getFavsLS();
@@ -347,3 +349,125 @@ containerCategories.addEventListener("click",(e)=>{
     }
 })
 containerFavs.addEventListener("click",deleteFav);
+=======
+// function saveMoviesLS(movieInfo)
+// {
+//     let movies = getMoviesLS();
+//     movies.push(movieInfo);
+//     localStorage.setItem('movies', JSON.stringify(movies));
+// }
+// function addMovieToFavs(productInfo)
+// {
+//     const favorite=document.createElement("tr")
+//     favorite.id=`${productInfo.id}`;
+//     favorite.innerHTML=`
+//         <td class="img-fav">
+//             ${productInfo.imagen}
+//         </td>
+//         <td class="name-fav">
+//             ${productInfo.nombre}
+//         </td>
+//         <td class="close-fav">
+//             <a href=# class="delete-fav">&times</a>
+//         </td>
+//     `;
+//     favoritesList.appendChild(favorite);
+// }
+// function rendermoviesLS()
+// {
+//     let movies = getMoviesLS();
+//     movies.forEach((movie)=>{
+//     const favorite=document.createElement("tr")
+//     favorite.id=`${movie.id}`;
+//     favorite.innerHTML=`
+//         <td class="img-fav">
+//             ${movie.imagen}
+//         </td>
+//         <td class="name-fav">
+//             ${movie.nombre}
+//         </td>
+//         <td class="close-fav">
+//             <a href=# class="delete-fav">&times</a>
+//         </td>
+//     `;
+//     favoritesList.appendChild(favorite);
+//     })
+// }
+// function deleteFav(e)
+// {
+//     e.preventDefault();
+//     if(e.target.classList.contains("delete-fav"))
+//     {
+//         const removedElement = e.target.parentElement.parentElement
+//         const deleteId= removedElement.id;
+//         e.target.parentElement.parentElement.remove();
+//         console.log(deleteId);
+//         deleteFavLS(deleteId);
+//     }
+// }
+// function deleteFavLS(deleteId)
+// {
+//     console.log("hola");
+//     let movies = getMoviesLS();
+//     movies.forEach((movie,index)=>{
+//         if(movie.id === deleteId)
+//         {
+//             console.log("hola");
+//             movies.splice(index,1);
+//         }
+//     })
+//     localStorage.setItem("movies",JSON.stringify(movies));
+// }
+// document.addEventListener("DOMContentLoaded",rendermoviesLS);
+// containerCategories.addEventListener("click",(e)=>{
+//     e.preventDefault();
+//     if(e.target.classList.contains("fav-btn"))
+//     {
+//         let movieInfo=e.target.parentElement.parentElement.parentElement.parentElement.parentElement;
+//         if(movieInfo.classList.contains("movie"))
+//         {
+//             e.target.classList.add("color3")
+//             movieInfo=
+//             {
+//                 imagen: movieInfo.style.backgroundImage.slice(5,-2),
+//                 nombre: movieInfo.querySelector(".movie-title").textContent,
+//                 id: movieInfo.id
+//             }
+//         }
+//         else
+//         {
+//             e.target.children.classList.add("color3")
+//             movieInfo=movieInfo.querySelector(".movie");
+//             movieInfo=
+//             {
+//                 imagen: movieInfo.style.backgroundImage.slice(5,-2),
+//                 nombre: movieInfo.querySelector(".movie-title").textContent,
+//                 id: movieInfo.id
+//             }
+//         }
+//         addMovieToFavs(movieInfo)
+//         saveMoviesLS(movieInfo)
+//     }
+// })
+// document.addEventListener("click",deleteFav);
+=======
+const container = document.getElementById("root");
+const containerImage = document.getElementById("rootImage");
+
+function renderName(datos) {
+
+    const nombres = datos.map(dato => {
+        const list = document.createElement('li');
+        const list2 = document.createElement('img');
+        list.innerHTML = `${dato.nombre}`
+        list2.setAttribute('src', dato.imagen);
+        container.appendChild(list, list2);
+    });
+
+}
+
+fetch("http://localhost:3000/peliculas")
+    .then(response => response.json())
+    .then(data => renderName(data))
+>>>>>>> 52c5487dac5ccbab127ea4e03c49caf0118a8e56
+>>>>>>> d283b22ae4715351c2f382fef501c25fa21d0fb0
